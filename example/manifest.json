@@ -1,12 +1,11 @@
 {
+  "name": "Gizmo Helpers",
   "manifest_version": 2,
-  "homepage_url": "https://github.com/schovi/webpack-chrome-extension",
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content/index.js"]
-    }
-  ],
+  "homepage_url": "https://www.gizmogild.com/",
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["content/index.js"]
+  }],
   "background": {
     "persistent": true,
     "scripts": ["background/index.js"]
@@ -15,16 +14,32 @@
     "default_title": "Webpack chrome extension popup action",
     "default_popup": "popup/index.html"
   },
-  "chrome_url_overrides" : {
-    "newtab": "newtab/index.html"
-  },
   "permissions": [
     "background",
-    "tabs"
+    "tabs",
+    "activeTab"
   ],
   "icons": {
-    "16": "icons/webpack-16.png",
-    "32": "icons/webpack-32.png",
-    "128": "icons/webpack-128.png"
+    "16": "icons/gizmo-16.png",
+    "32": "icons/gizmo-32.png",
+    "128": "icons/gizmo-128.png"
+  },
+  "commands": {
+    "next-page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+K",
+        "mac": "Command+Shift+K"
+      },
+      "description": "Go to next page",
+      "global": true
+    },
+    "prev-page": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+J",
+        "mac": "Command+Shift+J"
+      },
+      "description": "Go to prev page",
+      "global": true
+    }
   }
 }

@@ -1,3 +1,3 @@
-import welcome from 'shared/welcome'
+import oberlo from './oberlo';
 
-welcome('content/index.js')
+oberlo('content/index.js');

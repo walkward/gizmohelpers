@@ -1,6 +1,27 @@
 body {
-  width: 600px;
-  font-size: 1.5em;
-  background-color: #222;
-  color: #bada55;
+  width: 300px;
+  font-size: 1.2em;
+  color: #222;
+}
+
+table {
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+thead {
+  background: #f9f9f9;
+  border-bottom: 2px solid #eee;
+}
+
+td {
+  border-bottom: 1px solid #eee;
+  padding: 6px;
+}
+
+tr td:first-child {
+  border-right: 1px dotted #eee;
+  text-align: right;
+  border-left: 1px solid #eee;
+  font-weight: bold;
 }
