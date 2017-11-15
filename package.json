@@ -10,8 +10,8 @@
     "test": "TODO",
     "start": "NODE_ENV=production ./node_modules/.bin/babel src --out-dir lib --source-maps inline --presets es2015 --plugins transform-object-rest-spread --watch",
     "build": "NODE_ENV=production ./node_modules/.bin/babel src --out-dir lib --source-maps inline --presets es2015 --plugins transform-object-rest-spread",
-    "example": "npm run build && ./bin/chrome-extension run ./example/manifest.json -o ./build",
-    "example:build": "npm run build && ./bin/chrome-extension build ./example/manifest.json -o ./release",
+    "gizmo-helpers": "npm run build && ./bin/chrome-extension run ./gizmo-helpers/manifest.json -o ./build",
+    "gizmo-helpers:build": "npm run build && ./bin/chrome-extension build ./gizmo-helpers/manifest.json -o ./release",
     "prepublish": "npm run build"
   },
   "keywords": [

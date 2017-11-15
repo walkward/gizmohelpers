@@ -56,7 +56,7 @@ export default function() {
       $('[data-panel-index="' + index + '"]').css("border", "2px solid black");
       $('html,body').animate({
         scrollTop: $('[data-panel-index="' + index + '"]').offset().top - 70
-      }, 'normal');
+      }, 'fast');
     }
   }
 
